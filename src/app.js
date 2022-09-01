@@ -6,6 +6,7 @@ const productRouter = require ("./routes/productRouter");
 const mainRouter = require ("./routes/mainRouter");
 const userRouter = require ("./routes/userRouter");
 const adminRouter = require ("./routes/adminRouter");
+const apiRouter = require ("./routes/apiRouter");
 const fs = require('fs');
 const methodOverride = require('method-override');
 const session = require("express-session");
@@ -14,13 +15,14 @@ const authMiddleware = require('./middlewares/authMiddleware');
 const loggedMiddleware = require('./middlewares/userLoggedMiddleware')
 const cookies = require('cookie-parser')
 const expressValidator = require('express-validator')
-
+const cors = require('cors')
 
 const app = express();
 
 app.use ( methodOverride ('_method') );
 
 //*captura info del body*//
+app.use(cors())
 app.use(express.urlencoded({extended: false }));
 app.use(express.json());
 
@@ -35,6 +37,7 @@ app.use("/",mainRouter);
 app.use("/product",productRouter);
 app.use("/user", userRouter);
 app.use("/admin", adminRouter);
+app.use("/api", apiRouter);
 app.use(session({
     secret: 'It is a secret',
     resave: false,

@@ -9,7 +9,7 @@ module.exports = {
         category_id: 1,
         description: "colección 2019",
         autor: "Dell",
-        image: "foto-1657502271034.png"
+        image: "foto-1657754407723.png"
 
       },
       {
@@ -18,7 +18,7 @@ module.exports = {
         category_id: 2,
         description: "colección pierina",
         autor: "Main",
-        image:"foto-1657502271034.png"
+        image:"foto-1661990171283.jpeg"
       },
       {
         name: "monored",
@@ -26,7 +26,7 @@ module.exports = {
         category_id: 3,
         description: "colección 2017 monoRed",
         autor: "Billy",
-        image: "foto-1657503602271.pdf"
+        image: "foto-1661990171283.jpeg"
       },
       {
         name: "limit",
@@ -34,7 +34,7 @@ module.exports = {
         category_id: 2,
         description: "coleccion apenft",
         autor: "braian",
-        image: "foto-1657503602271.pdf"
+        image: "foto-1661990171283.jpeg"
 
       },
       {
@@ -43,7 +43,7 @@ module.exports = {
         category_id: 4,
         description: "collecion apertura",
         autor: "Billy",
-        image: "foto-1657503602271.pdf"
+        image: "foto-1661990171283.jpeg"
       }
 
     ], {});
